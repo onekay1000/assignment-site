@@ -1,0 +1,521 @@
+/* CSS Reset */
+ header, nav, main, footer, img, ul ,figcaption,figure,div,article,aside{
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+}
+
+/* Base styles */
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: inline;
+}
+
+/* Make header responsive */
+header.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  margin: 0.5em 0;
+}
+
+/* NAVIGATION STYLING - Responsive */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #03585e;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-menu li {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 0.8em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2em;
+}
+
+.nav-menu li a:hover {
+  background-color: #e5e9fc;
+  color: #373684;
+  border-radius: 5px;
+}
+
+/* Hero image */
+#hero {
+  margin: 1em auto;
+  text-align: center;
+  width: 100%;
+}
+
+#hero img {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+/* Main content */
+main {
+  background-color: #ffffff;
+  padding: 1.5em;
+  font-size: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 1em;
+}
+
+/* Product sections */
+#j-c-le-roux, #robertson, #vodka, #whiskey {
+  background-color: #f3f3f3;
+  padding: 1.2em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 1em;
+}
+
+/* Form elements */
+input[type="checkbox"], input[type="number"] {
+  margin: 0.5em 0;
+}
+
+/* Footer styling */
+footer {
+  background-color: #03585e;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2em 1em;
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* Contact section */
+#contact {
+  background-color: #f9f9ff;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin: 1.5em auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#contact h2 {
+  color: #373684;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+#contact p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Map style */
+.map {
+  width: 100%;
+  height: 300px;
+  margin-top: 1.5em;
+  border: 5px solid #0e0ad1;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Hours section */
+#hours {
+  background-color: #fffdf0;
+  padding: 1.2em;
+  margin: 1.5em auto;
+  border-left: 6px solid #f2c58b;
+  border-radius: 8px;
+}
+
+#hours h3 {
+  font-size: 1.3em;
+  color: #373684;
+  margin-bottom: 0.5em;
+}
+
+#hours li {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+/* Round images */
+.round {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* About page */
+#about {
+  background-color: #ffffff;
+  padding: 1.5em;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Special deals banner */
+p[style*="background-color: rgb(24, 24, 22)"] {
+  padding: 0.8em !important;
+  margin: 1em;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Media Queries for larger screens */
+@media only screen and (min-width: 768px) {
+  /* Navigation for tablets and up */
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-menu li {
+    width: auto;
+  }
+  
+  .nav-menu li a {
+    padding: 1em 1.2em;
+  }
+  
+  /* Header layout */
+  header.hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  /* Main content */
+  main {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 1200px;
+  }
+  
+  /* Product sections */
+  #j-c-le-roux, #robertson, #vodka, #whiskey {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section img {
+    width: 40%;
+    margin-right: 1.5em;
+  }
+  
+  section div {
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Desktop styles */
+  .nav-menu li a {
+    font-size: 1.4em;
+    padding: 1em 1.5em;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  #hero img {
+    width: 70%;
+  }
+}
+
+/* Responsive Design for Tablets */
+@media (min-width: 768px) {
+    header.hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 1rem 2rem;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nav-menu li {
+        width: auto;
+        border-bottom: none;
+    }
+    
+    .nav-menu li a {
+        padding: 1rem 1.2rem;
+    }
+    
+    #j-c-le-roux, #robertson, #vodka, #whiskey {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #j-c-le-roux img, #robertson img, #vodka img, #whiskey img {
+        width: 40%;
+        margin-right: 1.5rem;
+    }
+    
+    #j-c-le-roux div, #robertson div, #vodka div, #whiskey div {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    .preview-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive Design for Desktops */
+@media (min-width: 1024px) {
+    .nav-menu li a {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .preview-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+main.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #03585e;
+    padding: 15px;
+    border-radius: 10px;
+    grid-column: 1 / -1; 
+}
+
+/* =======================
+   Tablet Viewport
+======================= */
+@media screen and (min-width: 550px), print {
+  .tab-desk { display: block; }
+  .mobile { display: none; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+  }
+
+  span.tab-desk { display: inline; }
+
+  nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    border-top: none;
+    border-right: 1px solid #e5e9fc;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a { padding: 0.25em 0.5em; }
+
+  .map {
+    width: 500px;
+    height: 450px;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    section {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+    }
+/* =======================
+   Desktop Viewport
+======================= */
+@media screen and (min-width: 769px), print { 
+
+  /* Header */
+  header {
+    padding: 2%;
+  }
+
+}
+    .home-figures {
+        display: flex;
+        justify-self: unset;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .highlight {
+        background-color: #fff3cd;
+        border: 1px solid #ffeeba;
+        padding: 20px;
+        border-radius: 10px;
+    }
+/* =========================
+   Mobile Viewport Styles
+   ========================= */
+@media screen and (max-width: 599px) {
+    /* i. Apply padding to articles */
+    article {
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* ii. Center-align h3 headings in articles */
+    article h3 {
+        text-align: center;
+        font-size: 1.3rem; /* viii. increase size */
+        margin-top: 10px;
+    }
+
+    /* iii. Center-align images in articles */
+    article img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* iv. Background color for second article only */
+    main article:nth-of-type(2) {
+        background-color: #f0f8ff; /* light blue tone */
+    }
+
+    /* v. Add left margin to unordered lists in articles */
+    article ul {
+        margin-left: 20px;
+    }
+
+    /* vi. Style the aside element */
+    aside {
+        background-color: #faf0e6;
+        padding: 15px;
+        border-left: 4px solid #ff9800;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+
+    /* vii. Span aside across all columns (even in grid) */
+    aside {
+        grid-column: 1 / -1;
+    }
+}
+/* Styles for print media*/
+@media print {
+            body {
+                background-color: white;
+                color: black;
+                font-size: 12pt;
+            }
+            
+            nav, .special-deals, aside {
+                display: none;
+            }
+            
+            a::after {
+                content: " (" attr(href) ") ";
+            }
+        }
